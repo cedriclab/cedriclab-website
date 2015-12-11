@@ -1,0 +1,153 @@
+html, body {
+    margin:0;
+    width:100%;
+    height:100%;
+    overflow-x:hidden;
+}
+
+li {list-style-type: none;}
+
+#header {
+    background-color:white;
+    z-index: 99;
+}
+
+div.circle {
+    position:absolute;
+    border-style: solid;
+    border-radius: 50%; 
+    border-width: 0px;
+    z-index:-1;
+}
+
+.circlebox {
+    border-style: solid;
+    border-radius: 50%; 
+    border-width: 0px;
+}
+
+div#cbox {
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+
+div#centralbox {
+    width:100%;
+    position:relative;
+    z-index:10;
+    font-family:'Josefin Sans', sans-serif;
+    font-size:70px;
+    color:black;
+}
+
+p.welcome {
+    font-family:'Josefin Sans', sans-serif;
+    font-size:70px;
+    color:black;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0px;
+    margin-bottom:0px;
+    background-color:white;
+}
+
+div#ctrl {
+    float:right;
+    width:250px;
+    height:50px;
+    background-color:#808080;
+    border-style:solid;
+    border-width:0px;
+    border-bottom-left-radius:10px;
+    z-index:10;
+}
+
+p.boxtext {
+    margin-top:10px;
+    margin-left:10px;
+    font-size:16px;
+    font-family:'Noto Sans', sans-serif;
+    color:white;
+}
+
+#magicplace {
+    overflow:hidden;
+}
+
+.thin-text {
+    font-family:'Josefin Sans', sans-serif !important;
+}
+
+.noto {
+    font-family:'Noto Sans', sans-serif !important;
+}
+
+.horrid-bar {
+    margin-top:30px;
+    background-color:#cccccc;
+    border-bottom: solid 3px #757575;
+    cursor:pointer;
+}
+
+.horrid-bar:hover {
+    background-color:#949494;
+}
+
+.horrid-bar h3 {
+    font-family:'Noto Sans', sans-serif !important;
+    margin-top:10px;
+    color:black;
+}
+
+.horrid-bar:hover h3 {
+    color:white;
+}
+
+.discrete-a {
+    text-decoration:none;
+    color:black;
+    cursor:pointer;
+}
+
+.discrete-a:hover {
+    color:black;
+}
+
+.v-discrete-a {
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.v-discrete-a:hover {
+    text-decoration:none;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.fb-color {
+    color:#3b5998;
+}
+
+.lin-color {
+    color:#4875B4;
+}
+
+.git-color {
+    color:#cccccc;
+}
+
+.fb-color:hover {
+    color:#2F477A;
+}
+
+.lin-color:hover {
+    color:#32527E;
+}
+
+.git-color:hover {
+    color:#8F8F8F;
+}

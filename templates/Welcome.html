@@ -1,0 +1,10 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="thin-text center-text" style="margin-top:<% print(this.winh/5); %>px; position:absolute; width:100%; font-size:96px;" id="welcome-one">[Bienvenue!]<br />[Welcome!]</h1>
+            <h1 class="thin-text center-text" style="margin-top:<% print((this.winh/5)+250); %>px; position:absolute; width:100%; font-size:72px;" id="choices"><a class="choicelang discrete-a" data-choice="A" id="choicea">FR</a> / <a class="choicelang discrete-a" data-choice="B" id="choiceb">EN</a></h1>
+            <h3 class="thin-text center-text" style="margin-top:<% print(this.winh-60); %>px; position:absolute; width:100%;" id="rand"><i class="fa fa-random" style="color:<% print(Tools.color.randcolor()); %>;"></i> : <label id="randomness"></label>%</h3>
+            <div style="height:<%= this.winh %>px;" id="magicplace"></div>
+        </div>
+    </div>
+</div>

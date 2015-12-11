@@ -1,0 +1,35 @@
+<div class="container-fluid" style="text-align:center;">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="thin-text" style="margin-bottom:30px; margin-top:50px;"><i class="fa fa-angle-down"></i> Portfolio <i class="fa fa-angle-down"></i></h1>
+        </div>
+    </div>
+    <% var count=0; _.each(projects, function(proj){ %>
+        <% if (count%2==0) { %>
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5">
+                    <h1 class="thin-text"><a href="<%= proj.link %>" class="discrete-a" target="_blank"><%= proj.title %></a></h1>
+                    <h5 class="noto"><%= proj.date %></h5>
+                    <p class="noto"><%= proj.description[Tools.general.getCurrentLanguage()] %></p>
+                </div>
+        <% } else { %>
+                <div class="col-sm-5">
+                    <h1 class="thin-text"><a href="<%= proj.link %>" class="discrete-a" target="_blank"><%= proj.title %></a></h1>
+                    <h5><%= proj.date %></h5>
+                    <p class="noto"><%= proj.description[Tools.general.getCurrentLanguage()] %></p>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        <% } %>
+        <% if (count==(projects.length-1) && count%2==0) { %>
+                <div class="col-sm-6"></div>
+            </div>
+        <% } %>
+    <% count+=1; }); %>
+     <div class="row">
+        <div class="col-md-12">
+            <div style="height:50px;"></div>
+        </div>
+    </div>
+</div>

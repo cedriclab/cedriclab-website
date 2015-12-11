@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CedLabProd: Cedric Laberge Productions</title>
+        <meta name="description" content="Cedric Laberge Productions">
+        <meta name="keywords" content="Web developer">
+        <meta name="keywords" content="Nodejs">
+        <meta name="keywords" content="Backbone">
+        
+        <link href='http://fonts.googleapis.com/css?family=Noto+Sans|Josefin+Sans:100' rel='stylesheet' type='text/css'></link>
+        <link rel="stylesheet" type="text/css" href="css/external/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/external/bootstrap-theme.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    
+        <link rel="stylesheet" type="text/css" href="css/cedlabprod.css">
+        <link rel="stylesheet" type="text/css" href="css/bs-overrides.css">
+    
+        <script type="text/javascript" src="js/Libs/jquery_v1-11-0.js"></script>
+        <script type="text/javascript" src="js/Libs/underscore_v1.5.2.js"></script>
+        <script type="text/javascript" src="js/Libs/backbone_v1.1.0.js"></script>
+        <script type="text/javascript" src="js/Libs/bootstrap.js"></script>
+  
+        <script type="text/javascript" src="js/Libs/scrollto.js"></script>
+
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbtB14xNMULZ9QfgbPGcScUFTyFTfSJhI&sensor=false"></script>
+        
+        <script style="text/javascript">
+            var Classes = {};
+            var Tools = {};
+        </script>
+    
+        <script type="text/javascript" src="js/Tools/General.js"></script>
+        <script type="text/javascript" src="js/Tools/MathAndRandom.js"></script>
+        <script type="text/javascript" src="js/Tools/Color.js"></script>
+    
+        <script type="text/javascript" src="js/Classes/ballClass.js"></script>
+    
+        <script type="text/javascript" src="js/Models/ContactModel.js"></script>
+        <script type="text/javascript" src="js/Models/PortfolioModel.js"></script>
+        <script type="text/javascript" src="js/Models/CVModel.js"></script>
+        <script type="text/javascript" src="js/Models/WelcomeModel.js"></script>
+        <script type="text/javascript" src="js/Models/HeaderModel.js"></script>
+        <script type="text/javascript" src="js/Models/MapModel.js"></script>
+        <script type="text/javascript" src="js/Models/AboutModel.js"></script>
+        <script type="text/javascript" src="js/Models/GeneralModel.js"></script>
+    
+        <script type="text/javascript" src="js/Views/ContactView.js"></script>
+        <script type="text/javascript" src="js/Views/PortfolioView.js"></script>
+        <script type="text/javascript" src="js/Views/CVView.js"></script>
+        <script type="text/javascript" src="js/Views/WelcomeView.js"></script>
+        <script type="text/javascript" src="js/Views/HeaderView.js"></script>
+        <script type="text/javascript" src="js/Views/MapView.js"></script>
+        <script type="text/javascript" src="js/Views/AboutView.js"></script>
+        <script type="text/javascript" src="js/Views/GeneralView.js"></script>
+        
+    </head>
+    <body onload="javascript:Tools.general.loadTemplates(Tools.general.startAll);">
+        <div style="height:70px; position:fixed; width:100%; z-index:99; background-color:white; opacity:0.9;" id="header-box"></div>
+        <div style="width:100%; height:70px;"></div>
+        <div class="container-fluid" style="height:100%;">
+            <div class="row">
+                <div class="col-md-12" id="content-box"></div>
+            </div>
+        </div>
+    </body>
+</html>

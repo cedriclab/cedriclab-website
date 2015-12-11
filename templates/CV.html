@@ -1,0 +1,41 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="thin-text" style="text-align:center;"><i class="fa fa-angle-up"></i> <%= itshim[Tools.general.getCurrentLanguage()] %> <i class="fa fa-angle-up"></i></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div style="background-color:<%= this.bgcolor %>; color:<%= this.textcolor %>; text-align:center;" class="col-sm-12">
+            <div class="container-fluid center-block" style="margin-top:25px;">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                        <h1 class="thin-text"><i class="fa fa-<%= skills.icon %>"></i> <%= skills.title[Tools.general.getCurrentLanguage()] %></h1>
+                        <% _.each(skills.subsections, function(sec){ %>
+                            <h3 class="noto"><i class="fa fa-<%= sec.icon %>"></i> <%= sec.title[Tools.general.getCurrentLanguage()] %></h3>
+                            <ul>
+                                <% _.each(sec.subsections, function(sub){ %>
+                                    <li class="noto"><%= sub[Tools.general.getCurrentLanguage()] %></li>
+                                <% }); %>
+                            </ul>
+                        <% }); %>
+                    </div>
+                    <div class="col-sm-5">
+                        <h1 class="thin-text"><i class="fa fa-<%= education.icon %>"></i> <%= education.title[Tools.general.getCurrentLanguage()] %></h1>
+                        <% _.each(education.subsections, function(sec){ %>
+                            <h3 class="noto"><%= sec.school[Tools.general.getCurrentLanguage()] %></h3>
+                            <h4 class="noto"><%= sec.degree[Tools.general.getCurrentLanguage()] %></h4>
+                            <h5 class="noto"><%= sec.year[Tools.general.getCurrentLanguage()] %></h5>
+                        <% }); %>
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+                <div class="row horrid-bar" id="cvchangecolor">
+                    <div class="col-sm-12">
+                        <h3><%= horrid[Tools.general.getCurrentLanguage()] %></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>                             
+</div>                                

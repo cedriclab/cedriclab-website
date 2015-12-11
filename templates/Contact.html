@@ -1,0 +1,45 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="thin-text" style="text-align:center; margin-bottom:30px; margin-top:50px;"><i class="fa fa-angle-down"></i> Contact <i class="fa fa-angle-down"></i></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div style="background-color:<%= this.bgcolor %>; color:<%= this.textcolor %>; text-align:center;" class="col-sm-12">
+            <div class="container-fluid center-block">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                        <h1 class="thin-text"><%= contact.title[Tools.general.getCurrentLanguage()] %></h1>
+                        <% _.each(contact.subsections, function(sec){ %>
+                            <h3 class="noto"><i class="fa fa-<%= sec.icon %>"></i> <%= sec.title[Tools.general.getCurrentLanguage()] %></h3>
+                            <h4 class="noto"><%= sec.value %></h4>
+                        <% }); %>
+                    </div>
+                    <div class="col-sm-5">
+                        <h1 class="thin-text"><%= social[Tools.general.getCurrentLanguage()] %></h1>
+                        <a href="https://www.facebook.com/pages/Ced-Lab-Prod-Cedric-Laberge-Productions/134022316664700" target="_blank" class="v-discrete-a fb-color"><h3 class="noto fb-color"><i class="fa fa-facebook-square"></i> Facebook</h3></a>
+                            <br />
+                        <a href="http://www.linkedin.com/profile/view?id=232731003" target="_blank" class="v-discrete-a lin-color"><h3 class="noto lin-color"><i class="fa fa-linkedin-square"></i> LinkedIn</h3></a>
+                            <br />
+                        <a href="https://github.com/cedriclab" target="_blank" class="v-discrete-a git-color"><h3 class="noto git-color"><i class="fa fa-github-square"></i> GitHub</h3></a>
+                            <br />
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+<!--                                
+                <div class="row horrid-bar" id="cvchangecolor">
+                    <div class="col-sm-12">
+                        <h3><%= horrid[Tools.general.getCurrentLanguage()] %></h3>
+                    </div>
+                </div>
+-->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div style="height:100px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>                             
+</div> 
