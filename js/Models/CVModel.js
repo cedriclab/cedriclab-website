@@ -8,19 +8,19 @@ Classes.CVModel = Backbone.Model.extend({
             "subsections" : [
                 {
                     "school" : {"FR" : "Université de Sherbrooke", "EN" : "University of Sherbrooke"},
-                    "degree" : {"FR" : "Certificat - Économie appliquée", "EN" : "Certificate - Economics"},
+                    "degree" : {"FR" : "M.Sc. - Économie", "EN" : "M.Sc. - Economics"},
                     "year" : {"FR" : "(En cours)", "EN" : "(Ongoing)"}
                 },
                 {
                     "school" : {"FR" : "Université de Montréal", "EN" : "University of Montreal"},
-                    "degree" : {"FR" : "Baccalauréat - Communication et politique", "EN" : "B.Sc. - Communications and political science"},
+                    "degree" : {"FR" : "B.Sc. - Communication et politique", "EN" : "B.Sc. - Communications and political science"},
                     "year" : {"FR" : "2013", "EN" : "2013"}
-                },
+                }/*,
                 {
                     "school" : {"FR" : "Université Paul-Valéry - Montpellier III", "EN" : "Paul-Valery University - Montpellier III"},
                     "degree" : {"FR" : "L1 - Études classiques", "EN" : "L1 - Classical studies"},
                     "year" : {"FR" : "2009", "EN" : "2009"}
-                }
+                }*/
             ]
         },
         
@@ -32,18 +32,18 @@ Classes.CVModel = Backbone.Model.extend({
                     "title": {"FR" : "Interfaces épatantes", "EN" : "Sleek interfaces"},
                     "icon" : "desktop",
                     "subsections" : [
-                        {"FR" : "HTML5, CSS3/Bootstrap", "EN" : "HTML5, CSS3/Bootstrap"},
+                        {"FR" : "HTML5, CSS3", "EN" : "HTML5, CSS3"},
                         {"FR" : "JavaScript/jQuery", "EN" : "JavaScript/jQuery"},
-                        {"FR" : "BackboneJS/UnderscoreJS", "EN" : "BackboneJS/UnderscoreJS"}
+                        {"FR" : "Architecture CMV (BackboneJS)", "EN" : "CMV architecture (BackboneJS)"}
                     ]
                 },
                 {
                     "title": {"FR" : "APIs et gestion de données", "EN" : "APIs and data management"},
                     "icon" : "cloud",
                     "subsections" : [
-                        {"FR" : "Node.JS/Express, PHP", "EN" : "Node.JS/Express, PHP"},
-                        {"FR" : "MySQL, PostgreSQL, expérience avec MongoDB", "EN" : "MySQL, PostgreSQL, some experience with MongoDB"},
-                        {"FR" : "Facebook API, Google Drive API", "EN" : "Facebook API, Google Drive API"}
+                        {"FR" : "Node.js, PHP, Socket.io", "EN" : "Node.js, PHP, Socket.io"},
+                        {"FR" : "MongoDB, MySQL, PostgreSQL", "EN" : "MongoDB, MySQL, PostgreSQL"},
+                        {"FR" : "Satistiques : R, Stats", "EN" : "Statistics : R, Stata"}
                     ]
                 },
                 {
@@ -51,7 +51,8 @@ Classes.CVModel = Backbone.Model.extend({
                     "icon" : "terminal", 
                     "subsections" : [
                         {"FR" : "Python", "EN" : "Python"},
-                        {"FR" : "Bases en Java et en C++", "EN" : "Some experience with Java and C++"}
+                        {"FR" : "Java", "EN" : "Java"},
+						{"FR" : "C++", "EN" : "C++"}
                     ]
                 }
             ]
