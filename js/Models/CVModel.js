@@ -43,7 +43,7 @@ Classes.CVModel = Backbone.Model.extend({
                     "subsections" : [
                         {"FR" : "Node.js, PHP, Socket.io", "EN" : "Node.js, PHP, Socket.io"},
                         {"FR" : "MongoDB, MySQL, PostgreSQL", "EN" : "MongoDB, MySQL, PostgreSQL"},
-                        {"FR" : "Satistiques : R, Stats", "EN" : "Statistics : R, Stata"}
+                        {"FR" : "Satistiques : R, Stata", "EN" : "Statistics : R, Stata"}
                     ]
                 },
                 {
